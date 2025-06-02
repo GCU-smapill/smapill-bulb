@@ -1,29 +1,14 @@
 # smapill-bulb
 
 ### 스마트 전구 색상 변경 API
-WiZ 스마트 전구를 제어하는 Flask API 서버입니다. 
-복약 확인 완료 시 전구의 색상을 변경하여 시각적 알림을 제공하는 시스템의 일부입니다.
+WiZ 스마트 전구를 제어하는 Flask API 서버입니다. \n
+복약 확인 완료 시 전구의 색상을 변경하여 시각적 알림을 제공합니다.
 
-#### 시스템 아키텍처
-이 API는 다음과 같은 통합 의료 관리 시스템의 구성 요소입니다:
-
-text
-처방전 사진 → Google Vision API → OCR 인식 → Gemini 프롬프팅
-        ↓
-AI 스피커 음성 인식 → 데이터베이스 → Gemini 프롬프팅 → 복약 확인 완료
-        ↓
-    알람 레포트 API ← 스마트 전구 색상 변경 API
-주요 기능
-전구 켜기: 밝기, 색온도, RGB 색상 설정 가능
-
-전구 끄기: 전구를 완전히 끄는 기능
-
-상태 조회: 전구 상태 확인 (미구현)
 
 ### 설치 및 설정
 #### 필요한 패키지 설치
-bash
-pip install flask pywizlight
+# bash pip install flask pywizlight
+
 전구 IP 주소 설정
 코드의 BULB_IP 변수를 실제 WiZ 전구의 IP 주소로 변경하세요:
 
